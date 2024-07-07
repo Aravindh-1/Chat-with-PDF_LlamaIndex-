@@ -5,7 +5,7 @@ from llama_index.core.agent import ReActAgent
 from LlamaIndex_Pdf import pdf_engine 
 import os 
 
-# Create a .env file and add your OpenAI api key there, thereby the model can be accessed.
+# Create a .env file and add your OpenAI api key there, thereby the LLM can be accessed.
 load_dotenv()
 
 tools = [
