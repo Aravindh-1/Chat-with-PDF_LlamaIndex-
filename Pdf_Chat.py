@@ -12,8 +12,8 @@ tools = [
     QueryEngineTool(
         query_engine=pdf_engine,
         metadata=ToolMetadata(
-            name="MS_Dhoni",
-            description="Detailed description about Ms Dhoni",
+            name="Name you want to set for your pdf",
+            description="Detailed description about your pdf",
         ),
     ),
 ]
