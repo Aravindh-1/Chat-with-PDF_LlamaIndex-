@@ -17,7 +17,7 @@ def get_index(data,index_name):
         )
     return index
 
-reader_path=os.path.join("data","E:\Intern AI Certs\Chat with Files using AI\MS_Dhoni.pdf")
+reader_path=os.path.join("data","Path to your pdf")
 reader=PDFReader().load_data(file=reader_path)
-pdf_index=get_index(reader,"Dhoni")  # The variable passed with file path loads to function to get its Vector index. 
+pdf_index=get_index(reader,"Nickname of your pdf")  # The variable passed with file path loads to function to get its Vector index. 
 pdf_engine=pdf_index.as_query_engine()
