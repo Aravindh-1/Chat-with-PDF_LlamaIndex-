@@ -5,10 +5,11 @@ from llama_index.core.agent import ReActAgent
 from LlamaIndex_Pdf import pdf_engine 
 import os 
 
-# Create a .env file and add your OpenAI api key there, thereby the LLM can be accessed.
-load_dotenv()
+
 # Another method of direectly using your api key 
 os.environ["OPEN_AI_API_KEY"] = "ENTER YOUR API KEY"
+api_key=os.environ["OPEN_AI_API_KEY"]
+
 
 tools = [
     QueryEngineTool(
@@ -20,5 +21,5 @@ tools = [
     ),
 ]
 
-llm=OpenAI(model="gpt-3.5-turbo-0613")
+llm=OpenAI(api_key=api_key, model="gpt-3.5-turbo-0613")
 agent= ReActAgent.from_tools(tools, llm=llm, verbose = True)
