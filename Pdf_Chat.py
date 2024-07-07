@@ -7,6 +7,8 @@ import os
 
 # Create a .env file and add your OpenAI api key there, thereby the LLM can be accessed.
 load_dotenv()
+# Another method of direectly using your api key 
+os.environ["OPEN_AI_API_KEY"] = "ENTER YOUR API KEY"
 
 tools = [
     QueryEngineTool(
