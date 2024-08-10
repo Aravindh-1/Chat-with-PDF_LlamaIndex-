@@ -6,7 +6,7 @@ from Pdf_Chat import tools
 from Pdf_Chat import llm
 
 
-st.title("Mahi Insights")
+st.title("Title name")
 #Importing and declaring the name of agent from Pdf_Chat
 agent= ReActAgent.from_tools(tools, llm=llm, verbose = True)
 #User input to machine
